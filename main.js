@@ -20,20 +20,27 @@ let paragraph2 = document.getElementById("paragraph-2");
 let paragraph3 = document.getElementById("paragraph-3");
 let lastButton = document.getElementById("special-thanks");
 let lastMessage = document.getElementById("last");
-let hide = document.getElementById("hide");
-
+let hide1 = document.getElementById("hide1");
+let owner = document.getElementById("owner");
 lastButton.style.marginLeft = "43%";
 lastButton.onclick = function () {
+    lastMessage.innerHTML = "special thanks to Brad Traversy for the tutorial & Redd for [suggestion & motivation]";
     lastMessage.style.opacity = "1";
-    hide.style.opacity = "1";
+    hide1.style.opacity = "1";
     lastButton.style.opacity = "0"
 }
-hide.onclick = function () {
+hide1.onclick = function () {
     lastMessage.style.opacity = "0";
-    hide.style.opacity = "0";
+    hide1.style.opacity = "0";
     lastButton.style.opacity = "1"
 }
 
+owner.onclick = function () {
+    lastMessage.innerHTML = "By Faiz12002";
+    lastMessage.style.opacity = "1";
+    hide1.style.opacity = "1";
+    lastButton.style.opacity = "0"
+}
 
 
 //STYLING
@@ -55,9 +62,14 @@ lastButton.style.marginLeft = "45.5%";
 lastButton.style.color = "gray";
 lastButton.style.backgroundColor = "#eeeeee";
 lastButton.style.height = "30px";
-hide.style.color = "gray";
-hide.style.backgroundColor = "#eeeeee";
-hide.style.height = "30px";
+hide1.style.color = "gray";
+hide1.style.backgroundColor = "#eeeeee";
+hide1.style.height = "30px";
+
+
+owner.style.color = "gray";
+owner.style.backgroundColor = "#eeeeee";
+owner.style.height = "30px";
 lastButton.style.marginTop = "40px";
 //BEGIN 
 let TIME = 5;
